@@ -1,0 +1,607 @@
+@font-face{
+    font-family: 'PressJobs';
+    src: url(/fonts/press_jobs/PressJobs.ttf); 
+}
+
+@font-face{
+    font-family: 'ForgetMeKnot-Roman';
+    src: url(/fonts/forget_me_knot_roman/ForgetMeKnot-Roman.otf); 
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dollface_titulo_bienvenida,
+.dollface_bievenida_img,
+.dollface_bievenida_texto{
+    animation: aparecer 1s ease;
+}
+
+body{
+    background-color:#FFD8F3 ;
+    margin: 0;
+}
+ 
+header{
+    margin:0 auto;
+    width: 100%;
+    max-width: 960px;
+    background-color: #FDB1C8;
+    color: #A51717;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.2rem solid #A51717;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    
+}
+
+
+.container{
+    margin: 0 auto;
+    width: 100%;  /*relativo*/
+    max-width: 960px;
+    
+}
+
+.container .dollface_titulo_bienvenida{
+    
+    display: flex;
+    justify-content: center;
+    font-family: 'PressJobs';
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    color: #A51717;
+}
+
+
+
+.menus{
+    display: flex;
+    gap: 0.3rem; 
+}
+
+.menus a{
+    padding: 0.1rem 0.4rem;
+    border: 2px solid #A51717;
+    border-radius: 0.5rem;
+    background-color:#e093cc;
+    color: #A51717;
+    font-family: 'ForgetMeKnot-Roman';
+    font-size: 1rem;
+}
+
+
+nav a{
+    text-decoration: none;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+nav a:hover{
+    transform: scale(1.05) translateY(-3px);
+}
+
+.dollface_bievenida_img{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.dollface_bievenida_texto{
+    font-family: 'ForgetMeKnot-Roman';
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.dollface_bievenida_img{
+    padding: 7rem;
+}
+
+.dollface_bievenida_img img{
+    box-shadow: 0 0 6rem 0.5rem #A51717;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.favoritos{
+    border: 0.2rem solid #A51717 ;
+    margin-bottom: 1rem;
+    
+}
+
+.favoritos_titulo{
+    display: flex;
+    justify-content: center;
+    color: #A51717;
+    font-size: 0.9rem;
+    font-family: 'PressJobs';
+}
+
+.favoritos_texto{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    color: black;
+    font-family: 'ForgetMeKnot-Roman';
+}
+
+.favoritos_img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-top: 6rem;
+    gap:20px;
+}
+
+.favoritos_img img{
+    box-shadow: 0 0 6rem 0.5rem #A51717;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.favoritos_img .mascarilla-pelo img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+}
+
+.favoritos_img .mascara-pestañas img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+}
+
+.favoritos_img .elf-primer img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+}
+.favoritos_img .mascarilla-pelo p{
+  color: #A51717;
+  font-size: 1rem;
+  font-family: 'ForgetMeKnot-Roman';
+
+}
+
+.favoritos_img .mascara-pestañas p{
+  color: #A51717;
+  font-size: 1rem;
+  font-family: 'ForgetMeKnot-Roman';
+}
+
+.favoritos_img .elf-primer p{
+  color: #A51717;
+  font-size: 1rem;
+  font-family: 'ForgetMeKnot-Roman';
+}
+
+.novedades{
+    border: 0.2rem solid #A51717 ;
+    margin-bottom: 1rem;
+}
+
+.novedades_titulo{
+    display: flex;
+    justify-content: center;
+    color: #A51717;
+    font-size: 0.9rem;
+    font-family: 'PressJobs';
+}
+
+.novedades_texto{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    color: black;
+    font-family: 'ForgetMeKnot-Roman';
+}
+
+.novedades_img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-top: 6rem;
+    gap:20px;
+}
+
+.novedades_img img{
+    box-shadow: 0 0 6rem 0.5rem #A51717;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.novedades_img .purse-essentials img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+}
+
+.novedades_img .base-liquida img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+}
+
+.novedades_img .suero-pestañas img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+}
+.novedades_img .purse-essentials p{
+  color: #A51717;
+  font-size: 1rem;
+  font-family: 'ForgetMeKnot-Roman';
+
+}
+
+
+.novedades_img .base-liquida p{
+  color: #A51717;
+  font-size: 1rem;
+  font-family: 'ForgetMeKnot-Roman';
+}
+
+.novedades_img .suero-pestañas p{
+  color: #A51717;
+  font-size: 1rem;
+  font-family: 'ForgetMeKnot-Roman';
+}
+
+.descuentos{
+    border: 0.2rem solid #A51717 ;
+    margin-bottom: 1rem;
+}
+
+.descuentos_titulo{
+    display: flex;
+    justify-content: center;
+    color: #A51717;
+    font-size: 0.9rem;
+    font-family: 'PressJobs';
+}
+
+.descuentos_texto{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    color: black;
+    font-family: 'ForgetMeKnot-Roman';
+}
+
+.descuentos_img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-top: 6rem;
+    gap:20px;
+}
+
+.descuentos_img img{
+    box-shadow: 0 0 6rem 0.5rem #A51717;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.descuentos_img .mascarilla-pelo img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+}
+
+.descuentos_img .mascara-pestañas img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+}
+
+.descuentos_img .elf-primer img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+}
+.descuentos_img .mascarilla-pelo p{
+  color: #A51717;
+  font-size: 1rem;
+  font-family: 'ForgetMeKnot-Roman';
+
+}
+
+
+.descuentos_img .mascara-pestañas p{
+  color: #A51717;
+  font-size: 1rem;
+  font-family: 'ForgetMeKnot-Roman';
+}
+
+.descuentos_img .elf-primer p{
+  color: #A51717;
+  font-size: 1rem;
+  font-family: 'ForgetMeKnot-Roman';
+}
+
+.mascarilla-pelo{
+  display: flex;
+  flex-direction: column;   /* imagen arriba, texto abajo */
+  align-items: center;      /* centra horizontalmente */
+  text-align: center;
+  flex: 0 0 300px;
+}
+
+.mascara-pestañas{
+ display: flex;
+ flex-direction: column;   
+ align-items: center;      
+ text-align: center;
+flex: 0 0 300px;
+}
+
+.elf-primer{
+ display: flex;
+ flex-direction: column;   
+ align-items: center;      
+ text-align: center;
+flex: 0 0 300px;
+}
+
+.purse-essentials{
+  display: flex;
+  flex-direction: column;   /* imagen arriba, texto abajo */
+  align-items: center;      /* centra horizontalmente */
+  text-align: center;
+  flex: 0 0 300px;
+}
+
+.base-liquida{
+ display: flex;
+ flex-direction: column;   
+ align-items: center;      
+ text-align: center;
+flex: 0 0 300px;
+}
+
+.suero-pestañas{
+ display: flex;
+ flex-direction: column;   
+ align-items: center;      
+ text-align: center;
+flex: 0 0 300px;
+}
+
+.descuentos_img .acido p{
+  color: #A51717;
+  font-size: 1rem;
+  font-family: 'ForgetMeKnot-Roman';
+}
+
+.acido{
+ display: flex;
+ flex-direction: column;   
+ align-items: center;      
+ text-align: center;
+flex: 0 0 300px;
+}
+
+
+.acido a{
+    text-decoration: none; 
+}
+
+.acido a:hover{
+  text-decoration: 0.1rem underline #A51717;  
+
+}
+
+.descuentos_img .blush-elf p{
+  color: #A51717;
+  font-size: 1rem;
+  font-family: 'ForgetMeKnot-Roman';
+}
+
+.blush-elf{
+ display: flex;
+ flex-direction: column;   
+ align-items: center;      
+ text-align: center;
+flex: 0 0 300px;
+}
+
+
+.blush-elf a{
+    text-decoration: none; 
+}
+
+.blush-elf a:hover{
+  text-decoration: 0.1rem underline #A51717;  
+
+}
+
+
+.descuentos_img .blush-crema p{
+  color: #A51717;
+  font-size: 1rem;
+  font-family: 'ForgetMeKnot-Roman';
+}
+
+.blush-crema{
+ display: flex;
+ flex-direction: column;   
+ align-items: center;      
+ text-align: center;
+flex: 0 0 300px;
+}
+
+
+.blush-crema a{
+    text-decoration: none; 
+}
+
+.blush-crema a:hover{
+  text-decoration: 0.1rem underline #A51717;  
+
+}
+
+
+.mascarilla-pelo a{
+    text-decoration: none;
+}
+
+
+.elf-primer a{
+    text-decoration: none; 
+}
+
+
+.mascarilla-pelo a:hover{
+  text-decoration: 0.1rem underline #A51717;  
+
+}
+
+.base-liquida a:hover{
+  text-decoration: 0.1rem underline #A51717;  
+}
+
+.suero-pestañas a:hover{
+  text-decoration: 0.1rem underline #A51717;  
+}
+
+.mascara-pestañas a{
+    text-decoration: none;
+}
+
+.base-liquida a{
+    text-decoration: none;
+}
+
+.suero-pestañas a{
+    text-decoration: none; 
+}
+
+.purse-essentials a{
+    text-decoration: none; 
+}
+.purse-essentials a:hover{
+  text-decoration: 0.1rem underline #A51717;  
+
+}
+
+.mascara-pestañas a:hover{
+  text-decoration: 0.1rem underline #A51717;  
+}
+
+.elf-primer a:hover{
+  text-decoration: 0.1rem underline #A51717;  
+}
+
+.horario_atencion_titulo{
+ font-family: 'PressJobs';
+ color: #A51717;
+ font-size: 0.9rem;
+ margin-top: 6rem;
+}
+
+.horario_atencion_texto{
+font-size: 1.1rem;
+color: black;
+font-family: 'ForgetMeKnot-Roman';
+}
+
+.tabla-horarios{
+    display: flex;
+    justify-content: center;
+    color: #A51717;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 1.1rem;
+    font-family: 'ForgetMeKnot-Roman';
+}
+
+footer{
+    margin: 0 auto;
+    width: 100%; /* ancho relativo */
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FDB1C8;
+    padding: 0.5rem;
+    color: #A51717;
+    border: 0.2rem solid #A51717;
+    font-size: 1.1rem;
+    font-family: 'ForgetMeKnot-Roman';
+ 
+}
+
+.logo-despedida{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-despedida-texto{
+    display: flex;
+    justify-content: center;
+    font-family: 'ForgetMeKnot-Roman';
+}
+
+#contacto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo a:hover{
+    text-decoration: underline;
+}
+
